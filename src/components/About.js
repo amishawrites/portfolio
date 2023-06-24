@@ -19,11 +19,7 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I am currently a <b>Software Development Engineer</b> at
-        <a href="https://www.aboutamazon.com/"> Amazon</a>, working in the AWS
-        sector under team Route53. At the same time, I am undertaking a
-        part-time <b> Master's of Science</b> in <b>Software Engineering </b>at{" "}
-        <a href="https://www.ox.ac.uk/about">University of Oxford</a>.
+<p>I am currently pursuing Bachelors in <b>Computer Engineering</b> along with honors in <b>AI &amp; ML</b> at<a href="https://www.xavier.ac.in/"> Xavier Institute of Engineering</a>. I am a dedicated worker, creative, data engineering analysis geek, with a relentless passion for extracting insights and optimizing operations through data-driven solutions.</p>
       </p>
     );
     const two = (
@@ -35,8 +31,8 @@ class About extends React.Component {
     const three = (
       <p>
         <b>Want to chat?</b> Shoot me a message at{" "}
-        <a href="mailto:gazi.jarin@mail.utoronto.ca">
-          gazi.jarin@mail.utoronto.ca
+        <a href="mailto:narvekar.amisha@gmail.com">
+          narvekar.amisha@gmail.com
         </a>{" "}
         and let's talk.
       </p>
@@ -44,11 +40,11 @@ class About extends React.Component {
     const desc_items = [one, two];
 
     const tech_stack = [
-      "Javascript ES6+",
+      "SQL",
       "Python",
       "React.js",
-      "Java",
-      "Node.js",
+      "AWS",
+      "Tableau",
       "HTML & CSS"
     ];
 
@@ -76,7 +72,7 @@ class About extends React.Component {
               {[two]}
             </div>
             <div className="about-image">
-              <img src={"/assets/me2.jpg"} />
+              <img src={"/assets/me4.jpeg"} />
             </div>
           </div>
         </FadeInSection>

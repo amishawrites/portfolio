@@ -49,32 +49,32 @@ function TabPanel(props) {
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired
+  value: PropTypes.any.isRequired,
 };
 
 function a11yProps(index) {
   if (isHorizontal) {
     return {
       id: `full-width-tab-${index}`,
-      "aria-controls": `full-width-tabpanel-${index}`
+      "aria-controls": `full-width-tabpanel-${index}`,
     };
   } else {
     return {
-      id: `vertical-tab-${index}`
+      id: `vertical-tab-${index}`,
     };
   }
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: "theme.palette.background.paper",
     display: "flex",
-    height: 300
+    height: 300,
   },
   tabs: {
-    borderRight: `1px solid ${theme.palette.divider}`
-  }
+    borderRight: `1px solid ${theme.palette.divider}`,
+  },
 }));
 
 const JobList = () => {
@@ -82,56 +82,31 @@ const JobList = () => {
   const [value, setValue] = React.useState(0);
 
   const experienceItems = {
-    Amazon: {
-      jobTitle: "Software Development Engineer @",
-      duration: "JUL 2022 - PRESENT",
+    Growthingly: {
+      jobTitle: "Lead Analyst @",
+      duration: "Jan 2023 - Apr 2023",
       desc: [
-        "Collaborate with experienced cross-disciplinary Amazonians to conceive, design, and bring innovative products and services to market.",
-        "Design and build innovative technologies in a large distributed computing environment and help lead fundamental changes in the industry.",
-        "Build distributed storage, index, and query systems that are scalable, fault-tolerant, low cost, and easy to manage/use."
-      ]
+        "Web-scraped a database of 300+ potential leads",
+        "Collaborated with cross-functional teams to pitch clients, do market research and analysis",
+      ],
     },
-    Wattpad: {
-      jobTitle: "Software Engineering Intern @",
+    XIE: {
+      jobTitle: "Committees @",
       duration: "MAY 2020 - APR 2021",
       desc: [
-        "Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
-        "Iteratively built web experiences for 80 million users across high-traffic pages.",
-        "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations."
-      ]
+        "Hindi Editor of Connexieon (College Magazine): Curated stories of students and staff, ensuring high-quality content and engaging articles.",
+        "Organizer (Computer Society of Xavierites): Successfully organized seminars for a group of 60+ students, focusing on web development and hackathons.",
+        "Graphic Designer (WDC): Utilized creative skills to design visually appealing posters, PowerPoint presentations, and event reports. Led a team of two junior designers, providing guidance and mentoring.",
+      ],
     },
-    "University of Toronto": {
-      jobTitle: "Research Engineer @",
+    "CMP Infotech": {
+      jobTitle: "Software Developer Inter @",
       duration: "MAY 2021 - SEPT 2021",
       desc: [
-        "Developing and researching an NLP-based framework using state-of-the-art tools like Spacy and Stanza to facilitate the derivation of requirements from health data by leveraging syntactic dependencies, entity-recognition and rule-based match-making.",
-        " Application selected for DCS Research Award ($4,000) as part of the ”Visualizing Privacy Analysis Results” project led by Professor Marsha Chechik."
-      ]
+        "Developed Library Management System"
+        
+      ],
     },
-    // Centivizer: {
-    //   jobTitle: "Research Developer @",
-    //   duration: "SEPT 2019 - APR 2020",
-    //   desc: [
-    //     "Researched and developed interactive and neural-activation technologies to stimulate physical and cognitive functions in order to slow the progression of neurodegenerative disorders.",
-    //     "Leveraged WebRTC to develop and maintain a Node.js online video-streaming platform in real-time competitive-mode games to research the effects of active stimulation for those suffering from dementia."
-    //   ]
-    // },
-    // TDSB: {
-    //   jobTitle: "Software Engineer @",
-    //   duration: "SEPT 2019 - DEC 2020",
-    //   desc: [
-    //     "Co-developed homework management software integrable with Google Classroom by utilizing the Python’s Flask micro-framework for the back-end API and Vue.js for the front-end UI, in order to translate business requirements into a functional full-stack application."
-    //   ]
-    // },
-    "Orange Gate": {
-      jobTitle: "Software Engineering Intern @",
-      duration: "MAY 2019 - AUG 2019",
-      desc: [
-        "Developed a Node.js smart home system through Facebook’s Messenger integrated with Bocco sen- sors and other smart devices (Nest camera, TPLink smart plugs) to derive conclusions about the current state of the home",
-        "Identified continuous improvements in data quality, design reports and coding activities, presenting results and findings to internal business stakeholders.",
-        "Relevant technologies/tools used: DialogFlow, Vision, AutoML, Messenger Bot API, MongoDB."
-      ]
-    }
   };
 
   const handleChange = (event, newValue) => {
