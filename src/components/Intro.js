@@ -23,33 +23,39 @@ class Intro extends React.Component {
       activeKey: eventKey
     });
   }
-  render() {
-    return (
-      <div id="intro">
-        <FractalTree></FractalTree>
-        <Typist avgTypingDelay={120}>
-          <span className="intro-title">
-            {"hi, "}
-            <span className="intro-name">{"amisha"}</span>
-            {" here."}
-          </span>
-        </Typist>
-        <FadeInSection>
-          <div className="intro-subtitle">I create stuff sometimes.</div>
-          <div className="intro-desc">
-           I'm a software engineer and artist based in Mumbai, India. I have great interest in web development, data engineering, analysis, and everything in between.
-          </div>
-          <a
-            href="mailto:narvekar.amisha@gmail.com"
-            className="intro-contact"
-          >
-            <EmailRoundedIcon></EmailRoundedIcon>
+render() {
+  return (
+    <div id="intro">
+      <FractalTree></FractalTree>
+      <Typist avgTypingDelay={120}>
+        <span className="intro-title">
+          {"hi, "}
+          <span className="intro-name">{"amisha"}</span>
+          {" here."}
+        </span>
+      </Typist>
+      <FadeInSection>
+        <div className="intro-subtitle">I create stuff sometimes.</div>
+        <div className="intro-desc">
+          I'm a software engineer and artist based in Mumbai, India. I have great interest in web development, data engineering, analysis, and everything in between.
+        </div>
+        <div className="intro-actions">
+          <a href="mailto:narvekar.amisha@gmail.com" className="intro-contact">
+            <EmailRoundedIcon />
             {"  " + "Say hi!"}
           </a>
-        </FadeInSection>
-      </div>
-    );
-  }
+          <span className="intro-actions-divider"></span>
+          <a href="../assets/resume.pdf" className="intro-resume">
+            <span className="resume-text">Resume</span>
+            <span className="resume-line"></span>
+          </a>
+        </div>
+      </FadeInSection>
+    </div>
+  );
+}
+
+
 }
 
 export default Intro;

@@ -24,7 +24,7 @@ class Projects extends React.Component {
   }
   render() {
     const spotlightProjects = {
-            Spotify: {
+      Spotify: {
         title: "Spotify End-to-End Pipeline",
         desc:
           "Created ETL pipeline for Spotify's top 100 artists monthly insights.",
@@ -32,7 +32,7 @@ class Projects extends React.Component {
         link: "https://github.com/amishawrites/spotify-etl-pipeline",
         open:
           "https://drive.google.com/file/d/14-h20qTmsXk5eTaAw5a7PUw9xVSjkALE/view?usp=sharing",
-        image: "/assets/spotify.jpeg",
+        image: "/assets/1.gif",
       },
       "Youtube Data Analysis": {
         title: "Youtube Data Analysis",
@@ -40,70 +40,67 @@ class Projects extends React.Component {
           "Managing, streamlining, and analyzing structured and semi-structured YouTube videos, the pipeline empowers business professionals to make data driven decisions",
         techStack: "AWS , Python , SQL , Quicksight",
         link: "https://github.com/amishawrites/youtube-data-analysis",
-        open: "https://medium.com/@narvekar.amisha/effortlessly-analyze-your-youtube-data-with-aws-a-step-by-step-guide-to-etl-pipeline-using-glue-f98caed05977",
-        image: "/assets/youtube.jpeg",
+        open:
+          "https://medium.com/@narvekar.amisha/effortlessly-analyze-your-youtube-data-with-aws-a-step-by-step-guide-to-etl-pipeline-using-glue-f98caed05977",
+        image: "/assets/2.gif",
       },
       Langverse: {
         title: "Langverse",
-        desc:
-          "Language Learning App",
-        techStack: "JAVASCRIPT (THREE.JS)",
-        link: "https://github.com/gazijarin/truth",
-        open: "https://gazijarin.github.io/Truth/",
-        image: "/assets/truth.png",
+        desc: "Language Learning App for Finnish, Spanish, French",
+        techStack: "Kotlin , RoomDatabase , Soundpool , Lottie files",
+        link: "https://github.com/amishawrites/langverse",
+        open:
+          "https://drive.google.com/file/d/1Tw_e0_P5RxX39UNuox54G5Nm2UV7jhaY/view?usp=sharing",
+        image: "/assets/3.gif",
       },
-      "Tall Tales": {
-        title: "tall tales",
+      "Go Travel": {
+        title: "Go Travel",
         desc:
-          "A multi-player story-telling web game for 3-5 players. Its usage of sockets to allow for concurrent gameplay, connecting friends across the internet.",
-        techStack: "NODE.JS (SOCKET.IO), REACT.JS, MONGODB",
-        link: "https://github.com/gazijarin/TallTales",
-        open: "https://talltales.herokuapp.com/",
-        image: "/assets/talltales.png",
+          "A Travel Guidance App to keep users up-to-date on restaurants, hotels, and places of interest in unfamiliar cities.",
+        techStack:
+          "React Native , Javascript , React Navigation , Expo , Axios",
+        link: "https://github.com/amishawrites/go-travel-app",
+        open:
+          "https://drive.google.com/file/d/1TuLZaZtEArXi3lJrJzwob-VHtPLEVc0W/view?usp=sharing",
+        image: "/assets/4.gif",
       },
-
     };
     const projects = {
-      "TDSB Homework Management Interface": {
-        desc:
-          "An application created for Toronto District School Board, with a Flask back-end and a Vue front-end.",
+    /*  abc: {
+        desc: "abc",
         techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
-        link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-        open: "https://tdsb-app.herokuapp.com/",
+        link: "abc",
+        open: "abc",
       },
-      "Adam A.I.": {
-        desc:
-          "A self-learning A.I. that learns to traverse through a complex maze using the genetic algorithm.",
+      abc: {
+        desc: "abc",
         techStack: "Javascript, HTML / CSS",
-        link: "https://github.com/gazijarin/adamai",
-        open: "https://gazijarin.github.io/AdamAI/",
+        link: "abc",
+        open: "abc",
       },
-      "Distributed Logging and Monitoring System": {
-        desc:
-          "A system that establishes an ORM connection to a Prisma client in order to communicate logs from microservices.",
+      abc: {
+        desc: "abc",
         techStack: "Node.js (Express.js), React.js, PostgreSQL",
-        link:
-          "https://github.com/gazijarin/Distributed-Logging-and-Monitoring-System",
-      },
-      "Odin Bot": {
-        desc:
-          "A Telegram bot that helps you excel on your daily tasks through Node NLP.",
+        link: "abc",
+      }, */
+      abc: {
+        desc: "abc",
         techStack: "Javascript, Node.js, Natural NLP, Telegram API",
-        link: "https://github.com/gazijarin/OdinBot",
+        link: "abc",
         open: "",
       },
-      "Game Centre": {
+      "xyz": {
         desc:
-          "An Android app consisting of three board games, including multiplayer, autosave, user authentication, etc.",
+          "abc",
         techStack: "Java, Android Studio",
-        link: "https://github.com/gazijarin/gamecentre",
+        link: "abc",
         open: "",
       },
       "Minimax Stonehenge": {
         desc:
-          "Two-player, zero-sum game with a strategic Minimax artificial intelligence.",
+          "abc",
         techStack: "Python",
-        link: "https://github.com/gazijarin/stonehenge",
+        link: "abc",
         open: "",
       },
     };

@@ -7,33 +7,41 @@ class About extends React.Component {
     super();
     this.state = {
       expanded: true,
-      activeKey: "1"
+      activeKey: "1",
     };
     this.handleSelect = this.handleSelect.bind(this);
   }
   handleSelect(eventKey) {
     this.setState({
-      activeKey: eventKey
+      activeKey: eventKey,
     });
   }
   render() {
     const one = (
       <p>
-<p>I am currently pursuing Bachelors in <b>Computer Engineering</b> along with honors in <b>AI &amp; ML</b> at<a href="https://www.xavier.ac.in/"> Xavier Institute of Engineering</a>. I am a dedicated worker, creative, data engineering analysis geek, with a relentless passion for extracting insights and optimizing operations through data-driven solutions.</p>
+        <p>
+          I am currently pursuing Bachelors in <b>Computer Engineering</b> along
+          with honors in <b>AI &amp; ML</b> at
+          <a href="https://www.xavier.ac.in/">
+            {" "}
+            Xavier Institute of Engineering
+          </a>
+          . I am a dedicated worker, creative, data engineering analysis geek,
+          with a relentless passion for extracting insights and optimizing
+          operations through data-driven solutions.
+        </p>
       </p>
     );
     const two = (
       <p>
-        Outside of work, I'm interested in following the developments of
-        science. I also play a lot of video games. And make TikToks.
+        Outside of work, I'm interested in Crocheting, Painting and curating
+        Playlists.
       </p>
     );
     const three = (
       <p>
         <b>Want to chat?</b> Shoot me a message at{" "}
-        <a href="mailto:narvekar.amisha@gmail.com">
-          narvekar.amisha@gmail.com
-        </a>{" "}
+        <a href="mailto:narvekar.amisha@gmail.com">narvekar.amisha@gmail.com</a>{" "}
         and let's talk.
       </p>
     );
@@ -45,10 +53,10 @@ class About extends React.Component {
       "React.js",
       "AWS",
       "Tableau",
-      "HTML & CSS"
+      "HTML & CSS",
     ];
 
-    const tech_items = tech_stack.map(stack => <li>{stack}</li>);
+    const tech_items = tech_stack.map((stack) => <li>{stack}</li>);
 
     return (
       <div id="about">
@@ -72,7 +80,7 @@ class About extends React.Component {
               {[two]}
             </div>
             <div className="about-image">
-              <img src={"/assets/me4.jpeg"} />
+              <img src={"/assets/me4.gif"} />
             </div>
           </div>
         </FadeInSection>

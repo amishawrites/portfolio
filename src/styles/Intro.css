@@ -7,12 +7,51 @@
   min-height: 100vh;
 }
 
+.intro-resume {
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: "NTR", sans-serif;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none; /* Remove border from the resume button */
+  background-color: transparent; /* Set background color to transparent */
+  color: var(--green-bright);
+  text-decoration: underline;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.intro-resume:hover:before {
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .intro-resume {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .intro-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .intro-resume,
+  .intro-contact {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
 .Typist {
   color: var(--lightest-slate);
   text-align: center;
   font-size: 76px;
   margin-top: -30px;
 }
+
 .Typist .Cursor--blinking {
   color: var(--green-bright);
   padding-left: 4px;
@@ -22,6 +61,7 @@
   font-family: "NTR", sans-serif;
   font-size: 86px;
 }
+
 .intro-name {
   font-family: "NTR", sans-serif;
   color: var(--green-bright);
@@ -54,6 +94,7 @@
   cursor: pointer;
   border: 1px solid var(--green-bright);
   border-radius: 4px;
+  margin-right: 10px;
 }
 
 .intro-contact:hover {
@@ -79,6 +120,7 @@ b {
   .intro-title {
     font-size: 46px;
   }
+
   .intro-name {
     font-size: 46px;
   }
