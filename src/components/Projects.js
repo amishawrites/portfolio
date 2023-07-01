@@ -13,97 +13,96 @@ class Projects extends React.Component {
     super();
     this.state = {
       expanded: true,
-      activeKey: "1"
+      activeKey: "1",
     };
     this.handleSelect = this.handleSelect.bind(this);
   }
   handleSelect(eventKey) {
     this.setState({
-      activeKey: eventKey
+      activeKey: eventKey,
     });
   }
   render() {
     const spotlightProjects = {
-      "No Man's Land": {
-        title: "no man's land",
+      Spotify: {
+        title: "Spotify End-to-End Pipeline",
         desc:
-          "A third-person survival-mode game where you battle against time and space to return to Earth.",
-        techStack: "C# (UNITY)",
-        link: "https://github.com/slakh96/no-mans-land",
-        open: "https://gazijarin.itch.io/no-mans-land",
-        image: "/assets/nomansland.png"
+          "Created ETL pipeline for Spotify's top 100 artists monthly insights.",
+        techStack: "AWS , Python , Spotify Api",
+        link: "https://github.com/amishawrites/spotify-etl-pipeline",
+        open:
+          "https://drive.google.com/file/d/14-h20qTmsXk5eTaAw5a7PUw9xVSjkALE/view?usp=sharing",
+        image: "/assets/1.gif",
       },
-      Truth: {
-        title: "truth",
+      "Youtube Data Analysis": {
+        title: "Youtube Data Analysis",
         desc:
-          "A three.js simulation of the planet system revolving around a monolith.",
-        techStack: "JAVASCRIPT (THREE.JS)",
-        link: "https://github.com/gazijarin/truth",
-        open: "https://gazijarin.github.io/Truth/",
-        image: "/assets/truth.png"
+          "Managing, streamlining, and analyzing structured and semi-structured YouTube videos, the pipeline empowers business professionals to make data driven decisions",
+        techStack: "AWS , Python , SQL , Quicksight",
+        link: "https://github.com/amishawrites/youtube-data-analysis",
+        open:
+          "https://medium.com/@narvekar.amisha/effortlessly-analyze-your-youtube-data-with-aws-a-step-by-step-guide-to-etl-pipeline-using-glue-f98caed05977",
+        image: "/assets/2.gif",
       },
-      "Tall Tales": {
-        title: "tall tales",
-        desc:
-          "A multi-player story-telling web game for 3-5 players. Its usage of sockets to allow for concurrent gameplay, connecting friends across the internet.",
-        techStack: "NODE.JS (SOCKET.IO), REACT.JS, MONGODB",
-        link: "https://github.com/gazijarin/TallTales",
-        open: "https://talltales.herokuapp.com/",
-        image: "/assets/talltales.png"
+      Langverse: {
+        title: "Langverse",
+        desc: "Language Learning App for Finnish, Spanish, French",
+        techStack: "Kotlin , RoomDatabase , Soundpool , Lottie files",
+        link: "https://github.com/amishawrites/langverse",
+        open:
+          "https://drive.google.com/file/d/1Tw_e0_P5RxX39UNuox54G5Nm2UV7jhaY/view?usp=sharing",
+        image: "/assets/3.gif",
       },
-      Portfolio: {
-        title: "portfolio.js",
+      "Go Travel": {
+        title: "Go Travel",
         desc:
-          "A small JS library that helps with clear and succinct data presentation.",
-        techStack: "NODE.JS (EXPRESS.JS)",
-        link: "https://github.com/gazijarin/Portfolio.js",
-        open: "https://afternoon-ocean-92382.herokuapp.com/",
-        image: "/assets/portfolio.png"
-      }
+          "A Travel Guidance App to keep users up-to-date on restaurants, hotels, and places of interest in unfamiliar cities.",
+        techStack:
+          "React Native , Javascript , React Navigation , Expo , Axios",
+        link: "https://github.com/amishawrites/go-travel-app",
+        open:
+          "https://drive.google.com/file/d/1TuLZaZtEArXi3lJrJzwob-VHtPLEVc0W/view?usp=sharing",
+        image: "/assets/4.gif",
+      },
     };
     const projects = {
-      "TDSB Homework Management Interface": {
-        desc:
-          "An application created for Toronto District School Board, with a Flask back-end and a Vue front-end.",
-        techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
-        link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-        open: "https://tdsb-app.herokuapp.com/"
+        "YouTube Data Analysis": {
+        desc: "The pipeline enables data-driven decisions by managing, streamlining, and analyzing structured and semi-structured YouTube videos.",
+        techStack: "AWS , Python , SQL , Quicksight",
+        link: "https://github.com/amishawrites/youtube-data-analysis",
+        open: "https://medium.com/@narvekar.amisha/effortlessly-analyze-your-youtube-data-with-aws-a-step-by-step-guide-to-etl-pipeline-using-glue-f98caed05977",
       },
-      "Adam A.I.": {
-        desc:
-          "A self-learning A.I. that learns to traverse through a complex maze using the genetic algorithm.",
-        techStack: "Javascript, HTML / CSS",
-        link: "https://github.com/gazijarin/adamai",
-        open: "https://gazijarin.github.io/AdamAI/"
+      Langverse: {
+        desc: "Language Learning App for Finnish, Spanish, French",
+        techStack: "Kotlin , RoomDatabase , Soundpool , Lottie files",
+        link: "https://github.com/amishawrites/langverse",
+        open: "https://drive.google.com/file/d/1Tw_e0_P5RxX39UNuox54G5Nm2UV7jhaY/view?usp=sharing",
       },
-      "Distributed Logging and Monitoring System": {
+      "Go Travel": {
+        desc: "A Travel Guidance App to keep users up-to-date on restaurants, hotels, and places of interest in unfamiliar cities.",
+        techStack: "React Native , Javascript , React Navigation , Expo , Axios",
+        link: "https://github.com/amishawrites/go-travel-app",
+        open: "https://drive.google.com/file/d/1TuLZaZtEArXi3lJrJzwob-VHtPLEVc0W/view?usp=sharing",
+      }, 
+      Balance: {
         desc:
-          "A system that establishes an ORM connection to a Prisma client in order to communicate logs from microservices.",
-        techStack: "Node.js (Express.js), React.js, PostgreSQL",
-        link:
-          "https://github.com/gazijarin/Distributed-Logging-and-Monitoring-System"
+          "Mental Health Website to connect users to therapists in their city along with fun activities like personality checker",
+        techStack: "Html, CSS, Javascript, Php",
+        link: "https://github.com/amishawrites/mental-health-website",
+        open: "",
       },
-      "Odin Bot": {
-        desc:
-          "A Telegram bot that helps you excel on your daily tasks through Node NLP.",
-        techStack: "Javascript, Node.js, Natural NLP, Telegram API",
-        link: "https://github.com/gazijarin/OdinBot",
-        open: ""
+      Portfolio: {
+        desc: "Built a personal portfolio website",
+        techStack: "React",
+        link: "https://github.com/amishawrites/portfolio",
+        open: "",
       },
-      "Game Centre": {
-        desc:
-          "An Android app consisting of three board games, including multiplayer, autosave, user authentication, etc.",
-        techStack: "Java, Android Studio",
-        link: "https://github.com/gazijarin/gamecentre",
-        open: ""
+      "Tic-Tac-Toe": {
+        desc: " Tic-Tac-Toe game with MinMax Algorithm",
+        techStack: "Html, CSS, Javascript",
+        link: "https://github.com/amishawrites/tic-tac-toe",
+        open: "https://amishawrites.github.io/tic-tac-toe/",
       },
-      "Minimax Stonehenge": {
-        desc:
-          "Two-player, zero-sum game with a strategic Minimax artificial intelligence.",
-        techStack: "Python",
-        link: "https://github.com/gazijarin/stonehenge",
-        open: ""
-      }
     };
 
     return (

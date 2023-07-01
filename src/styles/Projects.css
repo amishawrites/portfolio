@@ -34,12 +34,12 @@
 }
 
 .card-header {
-  margin-top: -20px;
+  margin-top: -50px;
   display: flex;
   padding: 1.25em 0 !important;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: none !important;
+  border-bottom: 5% !important;
 }
 .folder-icon {
   color: var(--green-bright);
@@ -102,8 +102,8 @@
 .carousel-caption {
   font-family: "NTR", sans-serif;
   max-width: 500px;
-  right: unset !important;
-  left: 25% !important;
+  right: center !important;
+  left: center !important;
   user-select: none;
 }
 
