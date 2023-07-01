@@ -67,7 +67,7 @@ class Projects extends React.Component {
     };
     const projects = {
         "YouTube Data Analysis": {
-        desc: "Managing, streamlining, and analyzing structured and semi-structured YouTube videos, the pipeline empowers business professionals to make data driven decisions",
+        desc: "The pipeline enables data-driven decisions by managing, streamlining, and analyzing structured and semi-structured YouTube videos.",
         techStack: "AWS , Python , SQL , Quicksight",
         link: "https://github.com/amishawrites/youtube-data-analysis",
         open: "https://medium.com/@narvekar.amisha/effortlessly-analyze-your-youtube-data-with-aws-a-step-by-step-guide-to-etl-pipeline-using-glue-f98caed05977",
