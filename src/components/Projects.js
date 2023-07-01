@@ -66,42 +66,42 @@ class Projects extends React.Component {
       },
     };
     const projects = {
-    /*  abc: {
-        desc: "abc",
-        techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
-        link: "abc",
-        open: "abc",
+        "YouTube Data Analysis": {
+        desc: "Managing, streamlining, and analyzing structured and semi-structured YouTube videos, the pipeline empowers business professionals to make data driven decisions",
+        techStack: "AWS , Python , SQL , Quicksight",
+        link: "https://github.com/amishawrites/youtube-data-analysis",
+        open: "https://medium.com/@narvekar.amisha/effortlessly-analyze-your-youtube-data-with-aws-a-step-by-step-guide-to-etl-pipeline-using-glue-f98caed05977",
       },
-      abc: {
-        desc: "abc",
-        techStack: "Javascript, HTML / CSS",
-        link: "abc",
-        open: "abc",
+      Langverse: {
+        desc: "Language Learning App for Finnish, Spanish, French",
+        techStack: "Kotlin , RoomDatabase , Soundpool , Lottie files",
+        link: "https://github.com/amishawrites/langverse",
+        open: "https://drive.google.com/file/d/1Tw_e0_P5RxX39UNuox54G5Nm2UV7jhaY/view?usp=sharing",
       },
-      abc: {
-        desc: "abc",
-        techStack: "Node.js (Express.js), React.js, PostgreSQL",
-        link: "abc",
-      }, */
-      abc: {
-        desc: "abc",
-        techStack: "Javascript, Node.js, Natural NLP, Telegram API",
-        link: "abc",
-        open: "",
-      },
-      "xyz": {
+      "Go Travel": {
+        desc: "A Travel Guidance App to keep users up-to-date on restaurants, hotels, and places of interest in unfamiliar cities.",
+        techStack: "React Native , Javascript , React Navigation , Expo , Axios",
+        link: "https://github.com/amishawrites/go-travel-app",
+        open: "https://drive.google.com/file/d/1TuLZaZtEArXi3lJrJzwob-VHtPLEVc0W/view?usp=sharing",
+      }, 
+      Balance: {
         desc:
-          "abc",
-        techStack: "Java, Android Studio",
-        link: "abc",
+          "Mental Health Website to connect users to therapists in their city along with fun activities like personality checker",
+        techStack: "Html, CSS, Javascript, Php",
+        link: "https://github.com/amishawrites/mental-health-website",
         open: "",
       },
-      "Minimax Stonehenge": {
-        desc:
-          "abc",
-        techStack: "Python",
-        link: "abc",
+      Portfolio: {
+        desc: "Built a personal portfolio website",
+        techStack: "React",
+        link: "https://github.com/amishawrites/portfolio",
         open: "",
+      },
+      "Tic-Tac-Toe": {
+        desc: " Tic-Tac-Toe game with MinMax Algorithm",
+        techStack: "Html, CSS, Javascript",
+        link: "https://github.com/amishawrites/tic-tac-toe",
+        open: "https://amishawrites.github.io/tic-tac-toe/",
       },
     };
 

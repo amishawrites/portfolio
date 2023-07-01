@@ -21,14 +21,12 @@ class About extends React.Component {
       <p>
         <p>
           I am currently pursuing Bachelors in <b>Computer Engineering</b> along
-          with honors in <b>AI &amp; ML</b> at
+          with honours in <b>AI &amp; ML</b> at
           <a href="https://www.xavier.ac.in/">
             {" "}
-            Xavier Institute of Engineering
+            Xavier Institute of Engineering. 
           </a>
-          . I am a dedicated worker, creative, data engineering analysis geek,
-          with a relentless passion for extracting insights and optimizing
-          operations through data-driven solutions.
+           I am a dedicated person with a strong interest in data engineering. I'm passionate about data-driven solutions, extracting insights, and optimizing operations with a creative and detail-oriented approach.
         </p>
       </p>
     );
@@ -80,7 +78,7 @@ class About extends React.Component {
               {[two]}
             </div>
             <div className="about-image">
-              <img src={"/assets/pfp.png"} />
+              <img src={"/assets/ami .jpg"} />
             </div>
           </div>
         </FadeInSection>

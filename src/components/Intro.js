@@ -35,7 +35,7 @@ render() {
         </span>
       </Typist>
       <FadeInSection>
-        <div className="intro-subtitle">I create stuff sometimes.</div>
+        <div className="intro-subtitle">merging the realms of tech and creativity.</div>
         <div className="intro-desc">
           I'm a software engineer and artist based in Mumbai, India. I have great interest in web development, data engineering, analysis, and everything in between.
         </div>
